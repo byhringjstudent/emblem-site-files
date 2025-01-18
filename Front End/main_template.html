@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Forgot Your Password</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            word-spacing: normal;
+            background-color: #424040; /* Charcoal Grey background */
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: Arial, sans-serif;
+            color: #ffffff; /* White text */
+        }
+
+        /* Container and Content */
+        .email-wrapper {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #424040; /* Charcoal Grey background */
+        }
+
+        .container {
+            background-color: #424040; /* Charcoal Grey background for the email container */
+            margin: 0 auto;
+            padding: 30px;
+            max-width: 600px;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        /* Header Image */
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Reset Code */
+        .reset-code {
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffeb3b; /* Yellow text for reset code */
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Button Styles */
+        .login-button {
+            background: #6e32e5; /* Purple button */
+            text-decoration: none;
+            padding: 10px 25px;
+            color: #ffffff;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Separator Styles */
+        .separator {
+            border: 0;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2); /* Lighter white lines */
+            margin: 20px 0;
+        }
+
+        /* Footer Styles */
+        .footer {
+            text-align: left; /* Left-align footer text */
+        }
+
+        .footer p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 14px;
+            color: #aaaaaa; /* Lighter white text for footer */
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+                border-radius: 6px;
+                max-width: 90%; /* Reduce width for smaller screens */
+            }
+
+            .logo img {
+                width: 100px; /* Scale down the logo */
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 22px; /* Adjust font size for headings */
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px; /* Adjust text size */
+            }
+
+            .reset-code {
+                font-size: 18px;
+            }
+
+            .login-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <div class="container">
+            <!-- Emblem Logo -->
+            <div class="logo">
+                <img src="C:\Users\Byhri\OneDrive\Desktop\Emblem Site\Front End\template design\simple-responsive-html-email\images\emblem_profile.png" width="115" alt="Emblem Logo">
+            </div>
+
+            <!-- Line Above Heading -->
+            <div class="separator"></div>
+
+            <!-- Main Content -->
+            <h1>Forgot your password?</h1>
+
+            <!-- Line Below Heading -->
+            <div class="separator"></div>
+
+            <h2>Hey {{users name}},</h2>
+            <p>We received a request to reset your password. To proceed, please enter the 8-digit reset code you received:</p>
+            <p>
+                <span>Your Reset Code:</span>
+                <span class="reset-code">{{reset_code}}</span>
+            </p>
+            <p>If you didn’t request this, please ignore this email. Your account remains secure.</p>
+            <p>For any assistance, feel free to contact <a href="https://emblem.toddle.site/need-help" style="color:#ff4081;text-decoration:underline;">our support team</a>.</p>
+
+            <!-- Line Below Thanks for Using Emblem -->
+            <p>Thanks for using Emblem!</p>
+            <div class="separator"></div>
+
+            <p>
+                <a href="https://emblem.toddle.site/login" class="login-button">Link to login page</a>
+            </p>
+
+            <!-- Separator -->
+            <div class="separator"></div>
+
+            <!-- Footer Section -->
+            <div class="footer">
+                <p>© 2025 Emblem. All rights reserved.</p>
+                <p>You received this email because you signed up on our website or made a purchase from us.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

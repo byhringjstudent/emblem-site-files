@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Responsive Email</title>
+    <style>
+        /* General styles for all elements */
+        table,
+        td,
+        div,
+        h1,
+        p {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        /* Styled horizontal line */
+        .styled-line {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 20px 0;
+        }
+
+        .content-wrapper {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #424040;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            padding: 20px 30px;
+            font-size: 14px;
+            color: #aaaaaa;
+            line-height: 22px;
+        }
+
+        /* Responsive design for mobile */
+        @media screen and (max-width: 530px) {
+            .content-wrapper {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0;word-spacing:normal;background-color:#424040;color:#ffffff;">
+    <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+        <table role="presentation" style="width:100%;border:none;border-spacing:0;">
+            <tr>
+                <td align="center" style="padding:40px;">
+                    <!-- Main container -->
+                    <div class="content-wrapper">
+                        <table role="presentation" class="container" style="width:100%;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#ffffff;">
+                            <!-- Logo Section -->
+                            <tr>
+                                <td style="padding:20px 0;text-align:center;">
+                                    <img src="C:\Users\Byhri\OneDrive\Desktop\Emblem Site\Front End\template design\simple-responsive-html-email\images\emblem_profile.png" width="120" alt="Emblem Logo" style="max-width:120px;height:auto;border:none;">
+                                </td>
+                            </tr>
+                            <!-- Line Above Content -->
+                            <tr>
+                                <td>
+                                    <hr class="styled-line">
+                                </td>
+                            </tr>
+                            <!-- Welcome Message Section -->
+                            <tr>
+                                <td style="padding:0 30px;">
+                                    <p style="margin:0;font-size:24px;line-height:28px;color:#ffffff;">Hi Jason,</p>
+                                    <p style="margin:15px 0 0;line-height:22px;color:#ffffff;">Thank you for signing up!</p>
+                                </td>
+                            </tr>
+                            <!-- Content Section -->
+                            <tr>
+                                <td style="padding:20px 30px;">
+                                    <p style="margin:0 0 15px;line-height:22px;color:#ffffff;">Please confirm your email address to start using Emblem and create your first digital business card.</p>
+                                </td>
+                            </tr>
+                            <!-- Button Section -->
+                            <tr>
+                                <td>
+                                    <a href="{{{magic_link}}}" target="_blank"
+                                        style="display:inline-block;width:calc(100% - 60px);max-width:500px;padding:12px 0;background-color:#6e32e5;color:#ffffff;text-decoration:none;font-weight:bold;text-align:center;border-radius:4px;line-height:20px;font-size:16px;margin:0 auto;display:block;">
+                                        Sign in with Magic Link</a>
+                                </td>
+                            </tr>
+                            <!-- Line Above Signature -->
+                            <tr>
+                                <td>
+                                    <hr class="styled-line">
+                                </td>
+                            </tr>
+                            <!-- Text Below Button -->
+                            <tr>
+                                <td style="padding:20px 30px;">
+                                    <p style="margin:0 0 15px;line-height:22px;color:#ffffff;">If you didn't sign up for an account, please ignore this email.</p>
+                                    <p style="margin:0 0 15px;line-height:22px;color:#ffffff;">Thank you,</p>
+                                    <p style="margin:0;line-height:22px;color:#ffffff;">The Emblem Team</p>
+                                </td>
+                            </tr>
+                            <!-- Line Above Footer -->
+                            <tr>
+                                <td>
+                                    <hr class="styled-line">
+                                </td>
+                            </tr>
+                            <!-- Footer Section -->
+                            <tr>
+                                <td class="footer-text">
+                                    <p style="margin:0;">&copy; 2025 Emblem. All rights reserved.</p>
+                                    <p style="margin:5px 0 0;">You received this email because you signed up on our website.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+
