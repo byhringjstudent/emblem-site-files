@@ -47,4 +47,13 @@ a. increase brand building imagery with example of digital email signature
 3. features page middle section image added / brand building imagery - digital email signature business card added
 *** NOTES ***
 a. increase brand building imagery with example of digital email signature 
+
+# Task - link to tally form for every user who clicks the learn more button from the Home Page
+#https://example.so/r/your-tally-form-link
+
+# Our Values Section images
+# great design - lightbulb to represent creativity/freedom of design 
+# pricing fairness - handshake to convey trust and integrity in pricing
+# doing things right - shield icon to emphasize trust and security
+# innovation with purpose - infinity symbol to reflect continuous improvements and innovation
 >>>>>>> origin/master
